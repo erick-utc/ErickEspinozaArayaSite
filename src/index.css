@@ -1,111 +1,112 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  --page-bg: #eef1e6;
+  --surface: #f8f7f1;
+  --surface-elevated: #ffffff;
+  --surface-strong: #11151a;
+  --bg-deep: #0c1014;
+  --text: #43413a;
+  --text-strong: #121212;
+  --text-inverse: #f5f7f8;
+  --muted-strong: #6c6a63;
+  --muted-inverse: rgba(245, 247, 248, 0.68);
+  --line-soft: rgba(18, 18, 18, 0.08);
+  --line-strong: rgba(18, 18, 18, 0.2);
+  --accent-warm: #ae4813;
+  --accent-lime: #d2ff4b;
+  --ink-on-accent: #0b1006;
+  --shadow-soft: 0 20px 50px rgba(15, 18, 22, 0.08);
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --sans: 'Avenir Next', 'Trebuchet MS', 'Segoe UI', sans-serif;
+  --heading: 'Avenir Next Condensed', 'Franklin Gothic Medium', 'Segoe UI',
+    sans-serif;
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
+  font: 17px/1.55 var(--sans);
+  letter-spacing: 0.01em;
   color: var(--text);
-  background: var(--bg);
+  background: var(--page-bg);
+  color-scheme: light dark;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  @media (max-width: 1024px) {
-    font-size: 16px;
-  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
+    --page-bg: #0b1013;
+    --surface: #12181d;
+    --surface-elevated: #182127;
+    --surface-strong: #0f1418;
+    --bg-deep: #090d10;
+    --text: #d5d9db;
+    --text-strong: #f0f7f8;
+    --text-inverse: #f0f7f8;
+    --muted-strong: #a4b0b2;
+    --muted-inverse: rgba(240, 247, 248, 0.7);
+    --line-soft: rgba(240, 247, 248, 0.08);
+    --line-strong: rgba(240, 247, 248, 0.18);
+    --accent-warm: #ff8d4a;
+    --accent-lime: #d2ff4b;
+    --ink-on-accent: #11160b;
+    --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.28);
   }
 }
 
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
+* {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
+  min-height: 100svh;
+  background:
+    radial-gradient(circle at top left, rgba(210, 255, 75, 0.16), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(57, 87, 255, 0.12), transparent 34%),
+    var(--page-bg);
+}
+
+#root {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  min-height: 100svh;
 }
 
 h1,
-h2 {
+h2,
+h3 {
+  margin: 0;
+  color: var(--text-strong);
   font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
+  line-height: 0.98;
 }
 
 h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
+  margin-top: 12px;
+  margin-bottom: 14px;
+  font-size: clamp(2.6rem, 7vw, 5.7rem);
+  letter-spacing: -0.04em;
 }
+
 h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
+  margin-bottom: 10px;
+  font-size: clamp(1.7rem, 3vw, 2.7rem);
+  letter-spacing: -0.03em;
 }
+
+h3 {
+  font-size: 1.05rem;
+}
+
 p {
   margin: 0;
 }
 
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent-warm);
+  outline-offset: 2px;
 }

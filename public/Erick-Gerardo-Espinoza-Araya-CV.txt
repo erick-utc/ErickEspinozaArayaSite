@@ -1,0 +1,72 @@
+Erick Gerardo Espinoza Araya
+Alajuela, Grecia, Costa Rica
+Phone: +506 7014-1908
+Email: egea19984@gmail.com
+LinkedIn: https://www.linkedin.com/in/egea19984
+GitHub: https://github.com/erick-utc
+
+Professional Summary
+Full stack developer with experience in AWS, MySQL, Microsoft SQL Server, PHP, WordPress, and Laravel, plus more than 14 years building AEM websites, UI platforms, and brand redesigns for global companies such as Akamai, Firestone, Bridgestone, Toyota, Splunk, BMW, Mercedes-Benz, and BMC.
+
+Core Stack
+- AEM 6.x, AEM as a Cloud Service, HTL/Sightly, Core Components, Content Fragments, Proxy Components
+- React, TypeScript, Angular, Vue, Astro, Next.js, JavaScript, Webpack
+- Laravel, PHP, WordPress, AWS, MySQL, SQL Server, Node.js, Docker
+- Responsive UI, mentoring, code reviews, Scrum, authoring experience
+
+Recent Experience
+Akamai Technologies Costa Rica (2024 - Present)
+Senior AEM Developer
+- Full stack developer in charge of the Akamai Marketing Site.
+- Working with ReactJS, VanillaJS, and AEM Cloud.
+
+El Nica Barber Studio (2025 - Present)
+Senior Full Stack Developer
+- Building a Laravel PHP application for appointments and ecommerce.
+- Hosted on Hostinger.
+
+Pop (2025)
+Senior AEM UI Developer
+- Worked with AEM 6.5 for BMC using ES6, Astro, Webpack, and AEM Core Components.
+- Responsibilities included UX analysis, code reviews, and mentoring.
+
+Nikola Digital Lab (2020 - 2024)
+Senior AEM and UI React Developer
+- Developed AEM 6.4/6.5 platforms for Toyota, Firestone, and Bridgestone.
+- Worked with React, Redux, Webpack, APIs, and mentoring.
+
+Sistemas Rodriguez (2017 - 2018)
+Senior Full Stack Developer
+- Full stack development with PHP, AWS EC2, MySQL, and ecommerce integrated with Shopify.
+- Built a production business platform with cloud infrastructure and custom backend logic.
+
+Atypical Digital (2019 - 2023)
+Senior AEM and UI React, Angular, VanillaJS Developer
+- Built author and UI components, Content Fragments, and EDAM solutions.
+- Supported yearly redesign initiatives for Splunk and provided technical mentoring.
+
+Education
+Software Engineer
+Universidad Tecnologica Costarricense (UTC)
+2023 - 2026
+
+Mathematics Teaching and Didactic Software Development
+Instituto Tecnologico de Costa Rica (ITCR)
+2004 - 2009
+
+Certifications and Training
+- Front End Frameworks Angular, MEIC (2024)
+- Certified Scrum Master, Scrum Alliance (2022)
+- Certified Scrum Master, SCRUMstudy (2019)
+- MongoDB for Node.js Developers, Mongo University (2015)
+- iOS Developer, CENFOTEC (2013)
+
+Selected Portfolio
+- https://www.akamai.com/
+- https://bmc.com/
+- https://www.firestonecompleteautocare.com/
+- https://toyota.com/
+- https://splunk.com/
+- https://www.mbusa.com/
+- https://www.bmwusa.com/
+- https://elnicabarberstudio.com/
