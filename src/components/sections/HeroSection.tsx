@@ -23,6 +23,7 @@ export function HeroSection({ locale }: { locale: Locale }) {
         </Copy>
         <div className="mt-6 flex flex-wrap gap-3">
           <Button href="#contact" variant="primary">{pick(content.hero.primaryCta, locale)}</Button>
+          <Button href={links.website} rel="noreferrer" target="_blank">{pick(content.hero.websiteCta, locale)}</Button>
           <Button href={links.linkedin} rel="noreferrer" target="_blank">{pick(content.hero.secondaryCta, locale)}</Button>
           <Button href={links.github} rel="noreferrer" target="_blank">{pick(content.hero.githubCta, locale)}</Button>
           <Button href={links.cv} rel="noreferrer" target="_blank">{pick(content.hero.cvViewCta, locale)}</Button>

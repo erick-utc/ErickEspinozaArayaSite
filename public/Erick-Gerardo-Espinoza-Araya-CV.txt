@@ -4,6 +4,7 @@ Phone: +506 7014-1908
 Email: egea19984@gmail.com
 LinkedIn: https://www.linkedin.com/in/egea19984
 GitHub: https://github.com/erick-utc
+Portfolio Website: https://erick-espinoza-araya-site.vercel.app
 
 Professional Summary
 Full stack developer with experience in AWS, MySQL, Microsoft SQL Server, PHP, WordPress, and Laravel, plus more than 14 years building AEM websites, UI platforms, and brand redesigns for global companies such as Akamai, Firestone, Bridgestone, Toyota, Splunk, BMW, Mercedes-Benz, and BMC.

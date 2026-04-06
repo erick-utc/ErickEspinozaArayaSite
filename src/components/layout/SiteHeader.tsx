@@ -29,6 +29,7 @@ export function SiteHeader({ locale, onLocaleChange }: SiteHeaderProps) {
         <a className="text-xs uppercase tracking-[0.14em] text-[var(--muted-inverse)] transition-colors hover:text-[var(--accent-lime)]" href="#contact">{labels.contact}</a>
       </nav>
       <div className="flex flex-wrap gap-2">
+        <Button href={links.website} rel="noreferrer" target="_blank">Live</Button>
         <Button href={links.github} rel="noreferrer" target="_blank">GitHub</Button>
         <Button href={links.cv} rel="noreferrer" target="_blank">CV</Button>
       </div>
