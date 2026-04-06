@@ -18,7 +18,7 @@ const variants: Record<CardVariant, string> = {
 
 export function Card({ as: Component = 'article', children, className, variant = 'light' }: CardProps) {
   return (
-    <Component className={cn('rounded-[24px] p-5 shadow-[var(--shadow-soft)]', variants[variant], className)}>
+    <Component className={cn('rounded-[24px] p-5 shadow-[var(--shadow-soft)] overflow-hidden text-ellipsis', variants[variant], className)}>
       {children}
     </Component>
   )
