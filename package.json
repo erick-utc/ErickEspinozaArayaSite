@@ -10,7 +10,9 @@
     "preview": "vite preview",
     "audit:a11y": "lighthouse http://localhost:5173 --only-categories=accessibility --output=html --output-path=./reports/lighthouse-accessibility.html --chrome-flags='--headless=new --no-sandbox'",
     "audit:axe": "node ./scripts/run-axe.mjs",
-    "audit:all": "npm run audit:a11y && npm run audit:axe"
+    "audit:all": "npm run audit:a11y && npm run audit:axe",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "react": "^19.2.4",
@@ -32,6 +34,18 @@
     "tailwindcss": "^4.2.2",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.57.0",
-    "vite": "^8.0.1"
+    "vite": "^8.0.1",
+    "storybook": "^10.6.1",
+    "@storybook/react-vite": "^10.6.1",
+    "@chromatic-com/storybook": "latest",
+    "@storybook/addon-vitest": "^10.6.1",
+    "@storybook/addon-a11y": "^10.6.1",
+    "@storybook/addon-docs": "^10.6.1",
+    "@storybook/addon-onboarding": "^10.6.1",
+    "eslint-plugin-storybook": "^10.6.1",
+    "vitest": "latest",
+    "@vitest/browser-playwright": "latest",
+    "@vitest/coverage-v8": "latest",
+    "playwright": "latest"
   }
 }
