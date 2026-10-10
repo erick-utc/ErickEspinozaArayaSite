@@ -739,7 +739,7 @@
             "entity": "vercel.app"
           },
           {
-            "url": "https://erick-espinoza-araya-site.vercel.app/favicon.svg",
+            "url": "https://erick-espinoza-araya-site.vercel.app/logo.png",
             "sessionTargetType": "page",
             "protocol": "h2",
             "rendererStartTime": 701.2389998435974,
@@ -2313,7 +2313,7 @@
             "totalBytes": 6367
           },
           {
-            "url": "https://erick-espinoza-araya-site.vercel.app/favicon.svg",
+            "url": "https://erick-espinoza-araya-site.vercel.app/logo.png",
             "totalBytes": 1573
           },
           {

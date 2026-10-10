@@ -19,6 +19,7 @@ export function SiteHeader({ locale, onLocaleChange }: SiteHeaderProps) {
 
   return (
     <header className="grid items-center gap-4 rounded-[24px] border border-white/8 bg-[#10151a] px-[22px] py-[18px] shadow-[var(--shadow-soft)] lg:grid-cols-[auto_1fr_auto_auto]">
+      <img className="h-10 w-10 rounded-full border border-white/8 bg-white" src="/logo.png" alt="Logo" />
       <p className="m-0 text-sm uppercase tracking-[0.16em] text-[var(--text-inverse)]">Erick Espinoza Araya</p>
       <nav aria-label="Main navigation" className="flex flex-wrap justify-start gap-3 lg:justify-center">
         <a className="text-xs uppercase tracking-[0.14em] text-[var(--muted-inverse)] transition-colors hover:text-[var(--accent-lime)]" href="#about">{labels.about}</a>
