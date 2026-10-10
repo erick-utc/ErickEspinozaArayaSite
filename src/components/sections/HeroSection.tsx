@@ -15,19 +15,19 @@ export function HeroSection({ locale }: { locale: Locale }) {
         <Copy className="mt-2 text-sm uppercase tracking-[0.08em] text-white/82" size="small" tone="inverse-muted">
           {pick(content.hero.badge, locale)}
         </Copy>
-        <Title className="mt-3 !text-[#d2ff4be0]" inverse level={1}>
+        <Title className="my-6 !text-[#d2ff4be0]" inverse level={2}>
           {pick(content.hero.title, locale)}
         </Title>
         <Copy className="max-w-[60ch]" size="lead" tone="inverse-muted">
           {pick(content.hero.subtitle, locale)}
         </Copy>
-        <div className="mt-6 flex flex-wrap gap-3">
-          <Button href="#contact" variant="primary">{pick(content.hero.primaryCta, locale)}</Button>
-          <Button href={links.website} rel="noreferrer" target="_blank">{pick(content.hero.websiteCta, locale)}</Button>
-          <Button href={links.linkedin} rel="noreferrer" target="_blank">{pick(content.hero.secondaryCta, locale)}</Button>
-          <Button href={links.github} rel="noreferrer" target="_blank">{pick(content.hero.githubCta, locale)}</Button>
-          <Button href={links.cv} rel="noreferrer" target="_blank">{pick(content.hero.cvViewCta, locale)}</Button>
-          <Button download href={links.cv}>{pick(content.hero.cvCta, locale)}</Button>
+        <div className="mt-6 gap-3">
+          <Button href="#contact" variant="primary" className="flex w-full mb-4">{pick(content.hero.primaryCta, locale)}</Button>
+          {/* <Button href={links.website} rel="noreferrer" target="_blank" className="flex w-full mb-4">{pick(content.hero.websiteCta, locale)}</Button> */}
+          <Button href={links.linkedin} rel="noreferrer" target="_blank" className="flex w-full mb-4">{pick(content.hero.secondaryCta, locale)}</Button>
+          <Button href={links.github} rel="noreferrer" target="_blank" className="flex w-full mb-4">{pick(content.hero.githubCta, locale)}</Button>
+          <Button href={links.cv} rel="noreferrer" target="_blank" className="flex w-full mb-4">{pick(content.hero.cvViewCta, locale)}</Button>
+          <Button download href={links.cv} className="flex w-full mb-4">{pick(content.hero.cvCta, locale)}</Button>
         </div>
       </div>
 

@@ -23,15 +23,16 @@ export type CertificationItem = {
   name: string
   issuer: string
   year: string
+  type?: string 
 }
 
 export const content = {
   nav: {
-    about: { es: 'Sobre mi', en: 'About' },
+    about: { es: 'About', en: 'About' },
     experience: { es: 'Experiencia', en: 'Experience' },
     projects: { es: 'Proyectos', en: 'Projects' },
-    skills: { es: 'Habilidades', en: 'Skills' },
-    certifications: { es: 'Formacion', en: 'Education' },
+    skills: { es: 'Skills', en: 'Skills' },
+    certifications: { es: 'Educatión', en: 'Education' },
     contact: { es: 'Contacto', en: 'Contact' },
   },
   hero: {
@@ -52,10 +53,10 @@ export const content = {
       en: 'Over 14 years building AEM platforms, full stack applications, and brand redesigns for Akamai, Toyota, Firestone, Bridgestone, Splunk, BMW, Mercedes-Benz, and BMC.',
     },
     primaryCta: { es: 'Contactar', en: 'Contact me' },
-    secondaryCta: { es: 'Ver LinkedIn', en: 'View LinkedIn' },
+    secondaryCta: { es: 'LinkedIn', en: 'LinkedIn' },
     cvCta: { es: 'Descargar CV', en: 'Download Resume' },
     cvViewCta: { es: 'Ver CV', en: 'View Resume' },
-    githubCta: { es: 'Ver GitHub', en: 'View GitHub' },
+    githubCta: { es: 'GitHub', en: 'GitHub' },
     websiteCta: { es: 'Ver sitio online', en: 'View live site' },
     spotlightTitle: {
       es: 'Especialidad',
@@ -199,7 +200,7 @@ export const experienceItems: ExperienceItem[] = [
       es: 'Senior AEM Developer',
       en: 'Senior AEM Developer',
     },
-    period: '2024 - Actualidad',
+    period: '2024 - now',
     summary: {
       es: 'Full stack developer a cargo del Akamai Marketing Site, trabajando con ReactJS, VanillaJS y AEM Cloud.',
       en: 'Full stack developer in charge of the Akamai Marketing Site, working with ReactJS, VanillaJS, and AEM Cloud.',
@@ -212,7 +213,7 @@ export const experienceItems: ExperienceItem[] = [
       es: 'Senior Full Stack Developer',
       en: 'Senior Full Stack Developer',
     },
-    period: '2025 - Actualidad',
+    period: '2025 - 2026',
     summary: {
       es: 'Desarrollo de aplicacion Laravel PHP para citas y ecommerce, hospedada en Hostinger.',
       en: 'Building a Laravel PHP application for appointments and ecommerce, hosted on Hostinger.',
@@ -278,11 +279,13 @@ export const certificationItems: CertificationItem[] = [
     name: 'Software Engineer',
     issuer: 'Universidad Tecnologica Costarricense (UTC)',
     year: '2023 - 2026',
+    type: 'education'
   },
   {
     name: 'Mathematics Teaching and Didactic Software Development',
     issuer: 'Instituto Tecnologico de Costa Rica (ITCR)',
     year: '2004 - 2009',
+    type: 'education'
   },
   {
     name: 'Front End Frameworks Angular',

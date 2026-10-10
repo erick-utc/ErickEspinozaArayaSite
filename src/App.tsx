@@ -12,7 +12,7 @@ import { SkillsSection } from './components/sections/SkillsSection'
 import type { Locale } from './data/portfolio'
 
 function App() {
-  const [locale, setLocale] = useState<Locale>('es')
+  const [locale, setLocale] = useState<Locale>('en')
 
   return (
     <div className="grid gap-[22px] p-[22px] md:p-[22px]">

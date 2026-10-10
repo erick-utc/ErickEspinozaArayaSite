@@ -1,6 +1,6 @@
-import { Button } from '../ui/Button'
+
 import type { Locale } from '../../data/portfolio'
-import { content, links, pick } from '../../data/portfolio'
+import { content, pick } from '../../data/portfolio'
 
 type SiteHeaderProps = {
   locale: Locale
@@ -27,12 +27,7 @@ export function SiteHeader({ locale, onLocaleChange }: SiteHeaderProps) {
         <a className="text-xs uppercase tracking-[0.14em] text-[var(--muted-inverse)] transition-colors hover:text-[var(--accent-lime)]" href="#skills">{labels.skills}</a>
         <a className="text-xs uppercase tracking-[0.14em] text-[var(--muted-inverse)] transition-colors hover:text-[var(--accent-lime)]" href="#certifications">{labels.certifications}</a>
         <a className="text-xs uppercase tracking-[0.14em] text-[var(--muted-inverse)] transition-colors hover:text-[var(--accent-lime)]" href="#contact">{labels.contact}</a>
-      </nav>
-      <div className="flex flex-wrap gap-2">
-        <Button href={links.website} rel="noreferrer" target="_blank">Live</Button>
-        <Button href={links.github} rel="noreferrer" target="_blank">GitHub</Button>
-        <Button href={links.cv} rel="noreferrer" target="_blank">CV</Button>
-      </div>
+      </nav>  
       <div className="inline-flex overflow-hidden rounded-full border border-white/14">
         <button
           className={locale === 'es' ? 'bg-[var(--accent-lime)] px-3 py-2 text-xs tracking-[0.08em] text-[var(--bg-deep)]' : 'bg-transparent px-3 py-2 text-xs tracking-[0.08em] text-[var(--muted-inverse)]'}
