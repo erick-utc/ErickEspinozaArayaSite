@@ -1,5 +1,15 @@
 # React + TypeScript + Vite
 
+## Deploying to Vercel
+
+Vercel builds the portfolio and Storybook with `npm run build` and publishes the
+`dist` directory. The Storybook static site is included at `/styleguide/`.
+`/storybook/` redirects there as a shorter, memorable URL.
+
+To publish a deployment, push these changes to the connected Git branch or
+trigger a new deployment in Vercel. Ensure the project root is this repository;
+the build command and output directory are also defined in `vercel.json`.
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
