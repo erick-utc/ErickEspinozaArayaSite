@@ -11,10 +11,10 @@ export function ContactSection({ locale }: { locale: Locale }) {
       <SectionHeader inverse kicker={pick(content.contact.kicker, locale)} title={pick(content.contact.title, locale)} />
       <Copy tone="inverse">{pick(content.contact.body, locale)}</Copy>
       <div className="mt-6 flex flex-wrap gap-3">
-        <Button href="mailto:egea19984@gmail.com" variant="primary">{pick(content.contact.emailLabel, locale)}</Button>
-        <Button href={links.website} rel="noreferrer" target="_blank">{pick(content.contact.websiteLabel, locale)}</Button>
-        <Button href={links.github} rel="noreferrer" target="_blank">{pick(content.contact.githubLabel, locale)}</Button>
+        <Button href="mailto:egea19984@gmail.com" variant="primary">egea19984@gmail.com</Button>
         <Button href="tel:+50670141908">+506 7014-1908</Button>
+        <Button href={links.github} rel="noreferrer" target="_blank">{pick(content.contact.githubLabel, locale)}</Button>
+        <Button href={links.linkedin} rel="noreferrer" target="_blank">{pick(content.contact.linkedinLabel, locale)}</Button>
         <Button href={links.cv} rel="noreferrer" target="_blank">{pick(content.contact.cvViewLabel, locale)}</Button>
         <Button download href={links.cv}>{pick(content.contact.cvLabel, locale)}</Button>
       </div>

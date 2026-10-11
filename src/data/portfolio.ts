@@ -132,6 +132,7 @@ export const content = {
     cvLabel: { es: 'Descargar CV PDF', en: 'Download Resume PDF' },
     cvViewLabel: { es: 'Abrir CV', en: 'Open Resume' },
     githubLabel: { es: 'GitHub', en: 'GitHub' },
+    linkedinLabel: { es: 'LinkedIn', en: 'LinkedIn' },
     websiteLabel: { es: 'Sitio online', en: 'Live site' },
   },
 } as const
@@ -315,8 +316,8 @@ export const certificationItems: CertificationItem[] = [
 ]
 
 export const footerCopy = {
-  es: 'Hecho con React + Tailwind CSS. Disponible para oportunidades remotas y en Costa Rica. Sitio online: https://erick-espinoza-araya-site.vercel.app',
-  en: 'Built with React + Tailwind CSS. Open to remote opportunities and Costa Rica based roles. Live site: https://erick-espinoza-araya-site.vercel.app',
+  es: 'Disponible para oportunidades remotas y en Costa Rica. 2026',
+  en: 'Open to remote opportunities and Costa Rica based roles. 2026',
 }
 
 export function pick(text: LocalizedText, locale: Locale) {
