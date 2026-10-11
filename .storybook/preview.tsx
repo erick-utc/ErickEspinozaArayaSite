@@ -1,4 +1,7 @@
+/// <reference types="vite/client" />
+
 import type { Preview } from '@storybook/react-vite'
+import '../src/index.css'
 
 const preview: Preview = {
   parameters: {
@@ -7,6 +10,14 @@ const preview: Preview = {
        color: /(background|color)$/i,
        date: /Date$/i,
       },
+    },
+
+    backgrounds: {
+      options: {
+        dark: { name: 'Dark', value: '#0c1014' },
+        light: { name: 'Light', value: '#f8f7f1' },
+      },
+      default: 'dark',
     },
 
     a11y: {
